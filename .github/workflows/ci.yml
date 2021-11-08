@@ -42,3 +42,11 @@ jobs:
 
       - name: Generate site
         run: npm run generate
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: liixirt/liixirt.github.io
+          publish_branch: main
+          publish_dir: ./dist
