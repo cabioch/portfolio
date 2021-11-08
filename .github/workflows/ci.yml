@@ -47,6 +47,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: liixirt/liixirt.github.io
+          external_repository: cabioch/cabioch.github.io
           publish_branch: main
           publish_dir: ./dist
