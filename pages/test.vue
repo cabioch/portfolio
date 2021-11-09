@@ -1,0 +1,3 @@
+<template>
+  <scroll-arrow />
+</template>
