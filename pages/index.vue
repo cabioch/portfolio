@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <Presentation :page="page" />
-  </div>
+  <Presentation :page="page" />
 </template>
 
 <script>
