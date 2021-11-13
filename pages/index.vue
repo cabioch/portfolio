@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <Presentation :page="page" />
-    <div class="test"></div>
+    <div id="content"></div>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.test {
+#content {
   height: 100%;
   width: 100%;
 }

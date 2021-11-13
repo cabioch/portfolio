@@ -1,11 +1,13 @@
 <template>
   <div>
-    <v-icon :size="height" class="scroll-icon">mdi-arrow-down</v-icon>
+    <v-icon :size="height" class="scroll-icon" @click="$vuetify.goTo(target)"
+      >mdi-arrow-down</v-icon
+    >
   </div>
 </template>
 
 <style lang="scss" scoped>
-$animation-offset: 100px;
+$animation-offset: 60px;
 
 .scroll-icon {
   animation: 2s 5s infinite movearrow, 2s ease-out fadein 2s forwards;
@@ -49,6 +51,10 @@ $animation-offset: 100px;
 export default {
   props: {
     height: String,
+    target: {
+      type: String,
+      default: '#content',
+    },
   },
 }
 </script>

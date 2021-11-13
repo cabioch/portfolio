@@ -9,13 +9,9 @@
       </div>
     </v-row>
     <!-- TODO Refaire la layout -->
-    <v-row align-content="space-between" align="end">
-      <v-col>
-        <scroll-arrow height="80" />
-      </v-col>
-      <v-col align-self="end">
-        <v-btn :href="page.url_cv" class="mr-auto">Voir mon CV</v-btn>
-      </v-col>
+    <v-row align="end">
+      <scroll-arrow height="80" />
+      <v-btn :href="page.url_cv" class="ml-auto">Voir mon CV</v-btn>
     </v-row>
   </div>
 </template>

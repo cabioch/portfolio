@@ -1,5 +1,5 @@
 ---
-# TODO: Changer URL du CV
+# TODO: Changer URL
 url_cv: https://google.com
 url_source: https://github.com
 nom: Enzo Cabioch
