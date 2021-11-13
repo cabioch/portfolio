@@ -8,16 +8,23 @@
         <nuxt-content :document="page" />
       </div>
     </v-row>
-    <v-row align-content="end" justify="end">
-      <v-btn :href="page.url_cv">Voir mon CV</v-btn>
+    <!-- TODO Refaire la layout -->
+    <v-row align-content="space-between" align="end">
+      <v-col>
+        <scroll-arrow height="80" />
+      </v-col>
+      <v-col align-self="end">
+        <v-btn :href="page.url_cv" class="mr-auto">Voir mon CV</v-btn>
+      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
 import ButtonSource from './ButtonSource.vue'
+import ScrollArrow from './ScrollArrow.vue'
 export default {
-  components: { ButtonSource },
+  components: { ButtonSource, ScrollArrow },
   props: {
     page: {
       required: true,

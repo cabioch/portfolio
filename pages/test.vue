@@ -1,3 +1,3 @@
 <template>
-  <scroll-arrow />
+  <scroll-arrow height="150" />
 </template>
