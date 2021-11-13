@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss" scoped>
-$animation-offset: 60px;
+$animation-offset: 30px;
 
 .scroll-icon {
   animation: 2s 5s infinite movearrow, 2s ease-out fadein 2s forwards;
