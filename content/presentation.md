@@ -1,7 +1,6 @@
 ---
-# TODO: Changer URL
-url_cv: https://google.com
-url_source: https://github.com
+url_cv: ./CV.pdf
+url_source: https://github.com/cabioch/portfolio
 nom: Enzo Cabioch
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  
+Je suis Enzo Cabioch, étudiant en 2ème année de BTS SIO. Passionné depuis toujours par l'informatique et la science, découvrez mes projets.

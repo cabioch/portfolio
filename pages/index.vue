@@ -1,12 +1,16 @@
 <template>
   <div id="main">
     <Presentation :page="page" />
-    <div id="content"></div>
+    <div id="content">
+      <!-- Les différents stages & AP seront ici -->
+    </div>
   </div>
 </template>
 
 <script>
+import ButtonSource from '~/components/ButtonSource.vue'
 export default {
+  components: { ButtonSource },
   async asyncData({ $content }) {
     const page = await $content('presentation').fetch()
 

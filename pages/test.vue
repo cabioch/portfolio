@@ -1,3 +1,3 @@
 <template>
-  <scroll-arrow height="150" />
+  <Timeline />
 </template>

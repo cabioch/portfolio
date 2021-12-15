@@ -6,7 +6,6 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Enzo Cabioch',
     title: 'Enzo Cabioch',
     htmlAttrs: {
       lang: 'fr',

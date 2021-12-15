@@ -1,5 +1,6 @@
 <template>
   <div class="main-container d-flex flex-column">
+    <button-source :url="page.url_source" />
     <v-row>
       <div>
         <h1>

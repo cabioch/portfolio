@@ -1,6 +1,6 @@
 <template>
   <!-- TODO: Ajouter un tooltip -->
-  <v-btn fab :href="url">
+  <v-btn fab :href="url" class="btn-github">
     <v-icon>mdi-github</v-icon>
   </v-btn>
 </template>
@@ -12,3 +12,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.btn-github {
+  position: sticky;
+  top: 10vh;
+  left: 90vw;
+}
+</style>
