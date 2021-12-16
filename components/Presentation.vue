@@ -34,5 +34,7 @@ export default {
 .main-container {
   padding: 5%;
   height: 100%;
+  /* TODO Centrer l'image pour que ce soit responsive */
+  background-image: url('~/static/img.jpg');
 }
 </style>
