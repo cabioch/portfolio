@@ -1,8 +1,13 @@
 <template>
   <!-- TODO: Ajouter un tooltip -->
-  <v-btn fab :href="url" class="btn-github">
-    <v-icon>mdi-github</v-icon>
-  </v-btn>
+  <v-tooltip bottom>
+    <template v-slot:activator="{ on }">
+      <v-btn fab :href="url" class="btn-github" v-on="on">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+    </template>
+    <span>Voir mon code source sur GitHub</span>
+  </v-tooltip>
 </template>
 
 <script>
