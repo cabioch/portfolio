@@ -50,3 +50,4 @@ jobs:
           external_repository: cabioch/cabioch.github.io
           publish_branch: main
           publish_dir: ./dist
+          cname: cabioch.fr
