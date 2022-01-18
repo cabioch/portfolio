@@ -1,8 +1,8 @@
 <template>
   <div class="main-container d-flex flex-column">
-    <button-source :url="page.url_source" />
     <v-row>
       <div>
+        <!-- TODO Mettre une ombre pour rendre le texte plus lisible -->
         <h1>
           {{ page.nom }}
         </h1>
@@ -32,9 +32,9 @@ export default {
 
 <style scoped>
 .main-container {
-  padding: 5%;
+  padding: 10% 5% 5%;
   height: 100%;
   /* TODO Centrer l'image pour que ce soit responsive */
-  background-image: url('~/static/img.jpg');
+  background-image: url('~/static/img_nobright.jpg');
 }
 </style>

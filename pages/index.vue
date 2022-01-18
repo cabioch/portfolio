@@ -1,16 +1,19 @@
 <template>
   <div id="main">
-    <Presentation :page="page" />
+    <presentation :page="page" />
     <div id="content">
       <!-- Les différents stages & AP seront ici -->
+      <button-source :url="page.url_source" />
+      <timeline />
     </div>
   </div>
 </template>
 
 <script>
 import ButtonSource from '~/components/ButtonSource.vue'
+import Timeline from '~/components/Timeline.vue'
 export default {
-  components: { ButtonSource },
+  components: { ButtonSource, Timeline },
   async asyncData({ $content }) {
     const page = await $content('presentation').fetch()
 
@@ -22,11 +25,11 @@ export default {
 </script>
 
 <style scoped>
-#content {
-  height: 100%;
-  width: 100%;
-}
 #main {
+  height: 100vh;
+  width: 100vw;
+}
+#content {
   height: 100%;
   width: 100%;
 }

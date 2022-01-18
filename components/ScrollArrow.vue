@@ -1,3 +1,4 @@
+// TODO Enlever material design sur la flèche
 <template>
   <div>
     <v-icon :size="height" class="scroll-icon" @click="$vuetify.goTo(target)"

@@ -1,5 +1,4 @@
 <template>
-  <!-- TODO: Ajouter un tooltip -->
   <v-tooltip bottom>
     <template v-slot:activator="{ on }">
       <v-btn fab :href="url" class="btn-github" v-on="on">
@@ -19,9 +18,10 @@ export default {
 </script>
 
 <style scoped>
+/* TODO Afficher progressivement le bouton */
 .btn-github {
   position: sticky;
-  top: 10vh;
-  left: 90vw;
+  top: 90vh;
+  left: 95vw;
 }
 </style>
