@@ -1,5 +1,5 @@
-<template>
-  <v-tooltip bottom>
+<template >
+  <v-tooltip bottom v-if="isVisible">
     <template v-slot:activator="{ on }">
       <v-btn fab fixed :href="url" target="_blank" class="btn-github" v-on="on">
         <v-icon>mdi-github</v-icon>
@@ -13,6 +13,7 @@
 export default {
   props: {
     url: String,
+    isVisible: Boolean,
   },
 }
 </script>

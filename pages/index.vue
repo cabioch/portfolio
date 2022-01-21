@@ -1,25 +1,42 @@
 <template>
   <div id="main">
-    <presentation :page="page" />
+    <presentation :page="page" v-scroll="onScrolled" id="presentation" />
     <div id="content">
       <!-- Les différents stages & AP seront ici -->
-      <button-source :url="page.url_source" />
+      <button-source :url="page.url_source" :isVisible="isButtonVisible" />
       <timeline />
     </div>
   </div>
 </template>
 
 <script>
-import ButtonSource from '~/components/ButtonSource.vue'
-import Timeline from '~/components/Timeline.vue'
 export default {
-  components: { ButtonSource, Timeline },
+  // Récupère le contenu de la page
   async asyncData({ $content }) {
     const page = await $content('presentation').fetch()
-
     return {
       page,
     }
+  },
+
+  methods: {
+    onScrolled(e) {
+      const scrollTop = e.target.documentElement.scrollTop
+      if (scrollTop >= this.scrollMin) {
+        this.isButtonVisible = true
+        return
+      }
+      this.isButtonVisible = false
+    },
+  },
+
+  data: () => ({
+    scrollMin: Number,
+    isButtonVisible: false,
+  }),
+  mounted: function () {
+    // TODO La méthode ne fonctionne pas si la hauteur du viewport change
+    this.scrollMin = window.innerHeight / 10
   },
 }
 </script>
