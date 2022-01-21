@@ -1,7 +1,7 @@
 <template>
   <v-tooltip bottom>
     <template v-slot:activator="{ on }">
-      <v-btn fab :href="url" class="btn-github" v-on="on">
+      <v-btn fab fixed :href="url" target="_blank" class="btn-github" v-on="on">
         <v-icon>mdi-github</v-icon>
       </v-btn>
     </template>
@@ -20,7 +20,6 @@ export default {
 <style scoped>
 /* TODO Afficher progressivement le bouton */
 .btn-github {
-  position: sticky;
   top: 90vh;
   left: 95vw;
 }

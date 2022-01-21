@@ -18,10 +18,9 @@
 </template>
 
 <script>
-import ButtonSource from './ButtonSource.vue'
 import ScrollArrow from './ScrollArrow.vue'
 export default {
-  components: { ButtonSource, ScrollArrow },
+  components: { ScrollArrow },
   props: {
     page: {
       required: true,
