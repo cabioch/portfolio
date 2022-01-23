@@ -2,14 +2,13 @@
   <div class="main-container d-flex flex-column">
     <v-row>
       <div>
-        <!-- TODO Mettre une ombre pour rendre le texte plus lisible -->
         <h1>
           {{ page.nom }}
         </h1>
         <nuxt-content :document="page" />
       </div>
     </v-row>
-    <!-- TODO Refaire la layout -->
+    <!-- TODO Refaire la layout pour rendre le contenu plus lisible -->
     <v-row align="end">
       <scroll-arrow height="80" />
       <v-btn :href="page.url_cv" class="ml-auto">Voir mon CV</v-btn>

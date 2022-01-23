@@ -3,8 +3,8 @@
     <presentation :page="page" v-scroll="onScrolled" id="presentation" />
     <div id="content">
       <!-- Les différents stages & AP seront ici -->
+      <test-article :document="ap3" />
       <button-source :url="page.url_source" :isVisible="isButtonVisible" />
-      <timeline />
     </div>
   </div>
 </template>
@@ -14,8 +14,10 @@ export default {
   // Récupère le contenu de la page
   async asyncData({ $content }) {
     const page = await $content('presentation').fetch()
+    const ap3 = await $content('projets/APS3').fetch()
     return {
       page,
+      ap3,
     }
   },
 
