@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container d-flex flex-column">
+  <div class="main-container d-flex flex-column" :class="{ mobile: isMobile }">
     <v-row>
       <div>
         <h1>
@@ -17,14 +17,22 @@
 </template>
 
 <script>
-import ScrollArrow from './ScrollArrow.vue'
 export default {
-  components: { ScrollArrow },
   props: {
     page: {
       required: true,
     },
   },
+  mounted() {
+    if (this.$vuetify.breakpoint.smAndDown) {
+      this.isMobile = true
+    } else {
+      this.isMobile = false
+    }
+  },
+  data: () => ({
+    isMobile: false,
+  }),
 }
 </script>
 
@@ -32,7 +40,11 @@ export default {
 .main-container {
   padding: 10% 5% 5%;
   height: 100%;
-  /* TODO Centrer l'image pour que ce soit responsive */
   background-image: url('~/static/img_nobright.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.mobile {
+  padding-bottom: 20%;
 }
 </style>

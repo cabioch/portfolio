@@ -24,7 +24,6 @@ $animation-offset: 30px;
   }
 }
 
-// TODO Améliorer l'animation
 @keyframes movearrow {
   0% {
     top: 0px;
