@@ -3,8 +3,17 @@
     <presentation :page="page" v-scroll="onScrolled" id="presentation" />
     <div id="content">
       <!-- Les différents stages & AP seront ici -->
-      <test-article :document="ap3" />
       <button-source :url="page.url_source" :isVisible="isButtonVisible" />
+      <v-container fluid>
+        <v-row>
+          <v-col cols="2">
+            <timeline />
+          </v-col>
+          <v-col>
+            <test-article :document="aps3" class="p-2" />
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
   </div>
 </template>
@@ -14,21 +23,17 @@ export default {
   // Récupère le contenu de la page
   async asyncData({ $content }) {
     const page = await $content('presentation').fetch()
-    const ap3 = await $content('projets/APS3').fetch()
+    const aps3 = await $content('projets/APS3').fetch()
     return {
       page,
-      ap3,
+      aps3,
     }
   },
 
   methods: {
     onScrolled(e) {
       const scrollTop = e.target.documentElement.scrollTop
-      if (scrollTop >= this.scrollMin) {
-        this.isButtonVisible = true
-        return
-      }
-      this.isButtonVisible = false
+      this.isButtonVisible = scrollTop >= this.scrollMin
     },
   },
 
@@ -38,6 +43,7 @@ export default {
   }),
   mounted: function () {
     // TODO La méthode ne fonctionne pas si la hauteur du viewport change
+    // On définit une distance de scroll minimum pour afficher le bouton GitHub
     this.scrollMin = window.innerHeight / 10
   },
 }
