@@ -1,5 +1,9 @@
 <template>
-  <div class="main-container d-flex flex-column" :class="{ mobile: isMobile }">
+  <!-- On inverse la logique car les breakpoint ne s'initialisent pas assez tôt -->
+  <div
+    class="main-container d-flex flex-column"
+    :class="{ mobile: !$vuetify.breakpoint.mdAndUp }"
+  >
     <v-row>
       <div>
         <h1>
@@ -23,16 +27,6 @@ export default {
       required: true,
     },
   },
-  mounted() {
-    if (this.$vuetify.breakpoint.smAndDown) {
-      this.isMobile = true
-    } else {
-      this.isMobile = false
-    }
-  },
-  data: () => ({
-    isMobile: false,
-  }),
 }
 </script>
 
@@ -45,6 +39,7 @@ export default {
   background-size: cover;
 }
 .mobile {
+  /* TODO Travailler l'UI mobile */
   padding-bottom: 20%;
 }
 </style>

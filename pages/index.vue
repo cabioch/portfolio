@@ -9,9 +9,16 @@
           <v-col cols="2">
             <timeline />
           </v-col>
-          <v-col>
-            <test-article :document="aps3" class="p-2" />
+          <v-spacer />
+          <v-col cols="8">
+            <v-card>
+              <test-article :document="aps3" class="p-2" />
+              <div class="flex-column">
+                <!-- TODO Technologies, Image -->
+              </div>
+            </v-card>
           </v-col>
+          <v-spacer />
         </v-row>
       </v-container>
     </div>
