@@ -13,9 +13,7 @@
           <v-col cols="8">
             <v-card>
               <test-article :document="aps3" class="p-2" />
-              <div class="flex-column">
-                <!-- TODO Technologies, Image -->
-              </div>
+              <test-article :document="stage1" class="p-2" />
             </v-card>
           </v-col>
           <v-spacer />
@@ -29,11 +27,10 @@
 export default {
   // Récupère le contenu de la page
   async asyncData({ $content }) {
-    const page = await $content('presentation').fetch()
-    const aps3 = await $content('projets/APS3').fetch()
     return {
-      page,
-      aps3,
+      page: await $content('presentation').fetch(),
+      aps3: await $content('projets/APS3').fetch(),
+      stage1: await $content('projets/Stage1').fetch(),
     }
   },
 

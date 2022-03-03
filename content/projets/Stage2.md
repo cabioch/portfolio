@@ -1,0 +1,1 @@
+Je n'ai malheureusement pas réalisé de stage durant ma 2ème année, cependant j'en ai profité pour apprendre le langage Rust, et m'entrainer sur les défis Advent of Code 2021.
