@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 .btn-github {
-  top: 90vh;
+  top: 5vh;
   left: 95vw;
 }
 </style>
