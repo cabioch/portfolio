@@ -4,27 +4,42 @@
     <div id="content">
       <!-- Les différents stages & AP seront ici -->
       <button-source :url="page.url_source" :isVisible="isButtonVisible" />
-      <v-container fluid>
-        <v-row>
-          <v-col cols="2">
-            <timeline />
-          </v-col>
-          <v-spacer />
-          <v-col cols="8">
-            <v-card>
-              <test-article :document="aps3" class="p-2" />
-              <test-article :document="stage1" class="p-2" />
-            </v-card>
-          </v-col>
-          <v-spacer />
-        </v-row>
-      </v-container>
+      <v-carousel height="100vh" hide-delimiters="true">
+        <v-carousel-item>
+          <v-card elevation="0" height="100%">
+            <v-card-title primary-title class="justify-center">
+              AP du 1er A METTRE EN SURTEXTE semesttre
+            </v-card-title>
+            <v-row>
+              <v-col cols="6">
+                <v-card>
+                  <v-card-title primary-title class="justify-center">
+                    test
+                  </v-card-title>
+                  <v-flex>
+                    <img
+                      src="/symfony_logo.png"
+                      alt="Logo Symfony"
+                      height="100px"
+                    />
+                    <p>Symfony</p>
+                  </v-flex>
+                </v-card>
+              </v-col>
+              <v-col cols="6"> col 2 </v-col>
+            </v-row>
+          </v-card>
+        </v-carousel-item>
+        <v-caroussel-item> </v-caroussel-item>
+      </v-carousel>
     </div>
   </div>
 </template>
 
 <script>
+import TestArticle from '~/components/TestArticle.vue'
 export default {
+  components: { TestArticle },
   // Récupère le contenu de la page
   async asyncData({ $content }) {
     return {
