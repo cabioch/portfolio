@@ -1,5 +1,7 @@
 <template>
-  <nuxt-content :document="document" />
+  <v-card>
+    <nuxt-content :document="document" />
+  </v-card>
 </template>
 
 <script>
