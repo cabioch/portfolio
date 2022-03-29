@@ -11,6 +11,7 @@
           v-on="on"
           v-show="isVisible"
           transition="scale-transition"
+          dark
         >
           <v-icon>mdi-github</v-icon>
         </v-btn>

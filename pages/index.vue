@@ -8,7 +8,7 @@
         <v-carousel-item>
           <v-card elevation="0" height="100%">
             <v-card-title primary-title class="justify-center">
-              AP du 1er A METTRE EN SURTEXTE semesttre
+              AP du 1<sup>er</sup> semesttre
             </v-card-title>
             <v-row>
               <v-col cols="6">
