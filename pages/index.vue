@@ -4,42 +4,41 @@
     <div id="content">
       <!-- Les différents stages & AP seront ici -->
       <button-source :url="page.url_source" :isVisible="isButtonVisible" />
-      <v-carousel height="100vh" hide-delimiters="true">
+      <v-carousel hide-delimiters="true">
         <v-carousel-item>
-          <v-card elevation="0" height="100%">
-            <v-card-title primary-title class="justify-center">
-              AP du 1<sup>er</sup> semesttre
+          <v-card elevation="0" class="px-6 pb-6">
+            <v-card-title primary-title class="justify-center text-h3">
+              AP du 1<sup>er</sup> semestre
             </v-card-title>
             <v-row>
               <v-col cols="6">
-                <v-card>
+                <technologies
+                  :height="100"
+                  :test="['html5.png', 'css.png', 'mysql.png']"
+                />
+              </v-col>
+              <v-col cols="6">
+                <v-card class="px-4">
                   <v-card-title primary-title class="justify-center">
-                    test
+                    Résumé du projet
                   </v-card-title>
-                  <v-flex>
-                    <img
-                      src="/symfony_logo.png"
-                      alt="Logo Symfony"
-                      height="100px"
-                    />
-                    <p>Symfony</p>
-                  </v-flex>
+                  <p>
+                    Création d'un site présentant un métier lié à
+                    l'informatique. Découverte des langages du Web et des bases
+                    de données.
+                  </p>
                 </v-card>
               </v-col>
-              <v-col cols="6"> col 2 </v-col>
             </v-row>
           </v-card>
         </v-carousel-item>
-        <v-caroussel-item> </v-caroussel-item>
       </v-carousel>
     </div>
   </div>
 </template>
 
 <script>
-import TestArticle from '~/components/TestArticle.vue'
 export default {
-  components: { TestArticle },
   // Récupère le contenu de la page
   async asyncData({ $content }) {
     return {
@@ -74,7 +73,7 @@ export default {
   width: 100vw;
 }
 #content {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 99vw;
 }
 </style>
