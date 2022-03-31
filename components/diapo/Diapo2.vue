@@ -21,13 +21,26 @@
           <br />
           <b>Outils utilisés : </b> Trello, Cahier des charges, test cases &
           user stories
+          <img
+            src="/logos/trello.png"
+            alt="Logo Trello"
+            height="30px"
+            class="d-inline"
+          />
         </p>
-        <img src="/logos/trello.png" alt="Logo Trello" height="100px" />
-        [Mettre screenshot cahier des charges / site]
+        <img
+          src="/testcase.png"
+          alt="Image d'un exemple de Test Case"
+          height="200px"
+        />
       </card-resume>
     </v-col>
     <v-col cols="12">
-      <img src="/projets/ap2.png" alt="Screenshot du projet numéro 2" />
+      <img
+        src="/screenshot_ap2.png"
+        alt="Screenshot du projet numéro 2"
+        height="50%"
+      />
       [Mettre screenshot site]
     </v-col>
   </diapo-item>

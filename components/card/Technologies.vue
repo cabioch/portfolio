@@ -4,13 +4,13 @@
       Technologies utilisées
     </v-card-title>
     <v-container>
-      <v-row class="py-8">
+      <v-row class="px-8" justify="center">
         <img
           v-for="logoName in logos"
           :key="logoName"
           :src="'/logos/' + logoName"
           :height="height + 'px'"
-          class="mx-10"
+          class="mx-10 my-4"
           :alt="logoName"
         />
       </v-row>
