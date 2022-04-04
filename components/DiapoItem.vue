@@ -4,9 +4,11 @@
       <v-card-title primary-title class="justify-center text-h3">
         <slot name="title">AP du X<sup>ème</sup> semestre </slot>
       </v-card-title>
-      <v-row>
-        <slot></slot>
-      </v-row>
+      <slot name="overrow">
+        <v-row>
+          <slot></slot>
+        </v-row>
+      </slot>
     </v-card>
   </v-carousel-item>
 </template>

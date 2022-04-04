@@ -8,6 +8,20 @@
           de MongoDB pour la base de données.
         </p>
       </card-resume>
+      <card-resume>
+        <template #title> Outils utilisés </template>
+        <p>
+          <!-- TODO A réécrire ? -->
+          <b>Notion : </b> Gestion de projet, notes, etc...
+        </p>
+        <v-card outlined class="mb-6">
+          <img
+            src="/screenshot_notion.png"
+            alt="Capture d'écran Notion"
+            width="100%"
+          />
+        </v-card>
+      </card-resume>
     </v-col>
     <v-col cols="6">
       <card-technologies
@@ -21,15 +35,6 @@
           'js.png',
         ]"
       />
-    </v-col>
-    <v-col cols="6">
-      <card-resume>
-        <template #title> Outils utilisés </template>
-        <p>
-          <!-- TODO A réécrire ? -->
-          <b>Notion : </b> Gestion de projet, notes, etc...
-        </p>
-      </card-resume>
     </v-col>
   </diapo-item>
 </template>
