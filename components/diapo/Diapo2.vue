@@ -12,37 +12,36 @@
           'bootstrap.png',
         ]"
       />
+      <v-card outlined class="ma-5">
+        <img
+          src="/screenshot_ap2.png"
+          alt="Screenshot du projet numéro 2"
+          width="100%"
+        />
+      </v-card>
     </v-col>
     <v-col cols="6">
       <card-resume>
         <p>
           Réalisation d'un site de suivi de stage, avec une partie importante
-          sur la sécurité & le RGPD. Projet de groupe fait a 5.
+          sur la sécurité & le RGPD. Projet de groupe fait a 5. Projet réalisé
+          en méthode Agile avec deux livraisons.
           <br />
-          <b>Outils utilisés : </b> Trello, Cahier des charges, test cases &
-          user stories
-<!--          <img-->
-<!--            src="/logos/trello.png"-->
-<!--            alt="Logo Trello"-->
-<!--            height="30px"-->
-<!--            class="d-inline"-->
-<!--          />-->
-          <p style="color: red">Appuyer sur la gestion de projet en Agile & sprints</p>
-        <p style="color: yellow">Ajouter autres screenshots</p>
+          <b>Outils utilisés : </b> Trello pour la gestion de projet; Cahier des
+          charges avec maquettes, test cases & user stories
         </p>
         <img
           src="/testcase.png"
           alt="Image d'un exemple de Test Case"
           height="200px"
         />
+        <img
+          src="/screenshot_trello.png"
+          alt="Livraison sur Trello"
+          height="200px"
+        />
+        <img src="/screenshot_scenarii.png" alt="User Case" height="200px" />
       </card-resume>
-    </v-col>
-    <v-col cols="12">
-      <img
-        src="/screenshot_ap2.png"
-        alt="Screenshot du projet numéro 2"
-        height="50%"
-      />
     </v-col>
   </diapo-item>
 </template>
