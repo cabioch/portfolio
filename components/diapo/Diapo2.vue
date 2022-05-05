@@ -21,12 +21,14 @@
           <br />
           <b>Outils utilisés : </b> Trello, Cahier des charges, test cases &
           user stories
-          <img
-            src="/logos/trello.png"
-            alt="Logo Trello"
-            height="30px"
-            class="d-inline"
-          />
+<!--          <img-->
+<!--            src="/logos/trello.png"-->
+<!--            alt="Logo Trello"-->
+<!--            height="30px"-->
+<!--            class="d-inline"-->
+<!--          />-->
+          <p style="color: red">Appuyer sur la gestion de projet en Agile & sprints</p>
+        <p style="color: yellow">Ajouter autres screenshots</p>
         </p>
         <img
           src="/testcase.png"
@@ -41,7 +43,6 @@
         alt="Screenshot du projet numéro 2"
         height="50%"
       />
-      [Mettre screenshot site]
     </v-col>
   </diapo-item>
 </template>

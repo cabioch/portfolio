@@ -11,6 +11,10 @@
         <li>CSS3</li>
         <li>VueJS</li>
       </ul>
+      Création d'un site web vitrine avec VueJS.
+    </card-resume>
+    <card-resume>
+      Parler des difficultés rencontrées -> Communication, délai et organisation
     </card-resume>
   </diapo-item>
 </template>
