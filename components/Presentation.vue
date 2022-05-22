@@ -15,9 +15,17 @@
         </div>
       </v-row>
       <!-- TODO Refaire la layout pour rendre le contenu plus lisible -->
-      <v-row align="end">
-        <scroll-arrow height="80" />
-        <v-btn :href="page.url_cv" class="ml-auto">Voir mon CV</v-btn>
+      <v-row align="end" justify="end">
+        <v-col>
+          <scroll-arrow height="80" />
+        </v-col>
+        <div class="button-group">
+          <v-btn href="https://www.linkedin.com/in/enzo-cabioch-b62759229/">
+            <v-icon left>mdi-linkedin</v-icon>Mon profil LinkedIn
+          </v-btn>
+          <v-btn href="/tableau_synthese.pdf">Voir mon tableau de compétences</v-btn>
+          <v-btn :href="page.url_cv">Voir mon CV</v-btn>
+        </div>
       </v-row>
     </div>
   </v-theme-provider>
@@ -50,5 +58,9 @@ export default {
 
 .description {
   max-width: 70%;
+}
+
+.button-group>* {
+  margin: 0 1em;
 }
 </style>
