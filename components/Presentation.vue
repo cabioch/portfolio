@@ -1,16 +1,17 @@
 <template>
   <!-- On inverse la logique car les breakpoint ne s'initialisent pas assez tôt -->
   <v-theme-provider dark>
-    <div
-      class="main-container d-flex flex-column"
-      :class="{ mobile: !$vuetify.breakpoint.mdAndUp }"
-    >
+    <div class="main-container d-flex flex-column" :class="{ mobile: !$vuetify.breakpoint.mdAndUp }">
       <v-row>
         <div>
-          <h1>
-            {{ page.nom }}
+          <h1 class="text-h1">
+            Bienvenue sur mon portfolio
           </h1>
-          <nuxt-content :document="page" />
+          <div :class="{ description: $vuetify.breakpoint.mdAndUp }">
+            <h6 class="text-h6">
+              <nuxt-content :document="page" />
+            </h6>
+          </div>
         </div>
       </v-row>
       <!-- TODO Refaire la layout pour rendre le contenu plus lisible -->
@@ -41,8 +42,13 @@ export default {
   background-size: cover;
   color: white;
 }
+
 .mobile {
   /* TODO Travailler l'UI mobile */
   padding-bottom: 20%;
+}
+
+.description {
+  max-width: 70%;
 }
 </style>

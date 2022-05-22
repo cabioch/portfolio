@@ -2,22 +2,15 @@
   <diapo-item>
     <template #title>AP du 2<sup>eme</sup> semestre</template>
     <v-col cols="6">
-      <card-technologies
-        :height="100"
-        :logos="[
-          'html5.png',
-          'css.png',
-          'mysql.png',
-          'php.png',
-          'bootstrap.png',
-        ]"
-      />
+      <card-technologies :height="100" :logos="[
+        'html5.png',
+        'css.png',
+        'mysql.png',
+        'php.png',
+        'bootstrap.png',
+      ]" />
       <v-card outlined class="ma-5">
-        <img
-          src="/screenshot_ap2.png"
-          alt="Screenshot du projet numéro 2"
-          width="100%"
-        />
+        <img v-img:group-2 src="/screenshot_ap2.png" alt="Screenshot du projet numéro 2" width="100%" />
       </v-card>
     </v-col>
     <v-col cols="6">
@@ -30,17 +23,11 @@
           <b>Outils utilisés : </b> Trello pour la gestion de projet; Cahier des
           charges avec maquettes, test cases & user stories
         </p>
-        <img
-          src="/testcase.png"
-          alt="Image d'un exemple de Test Case"
-          height="200px"
-        />
-        <img
-          src="/screenshot_trello.png"
-          alt="Livraison sur Trello"
-          height="200px"
-        />
-        <img src="/screenshot_scenarii.png" alt="User Case" height="200px" />
+        <v-row justify="center">
+          <img v-img:group-2 src="/testcase.png" alt="Image d'un exemple de Test Case" height="200px" />
+          <img v-img:group-2 src="/screenshot_trello.png" alt="Livraison sur Trello" height="200px" />
+          <img v-img:group-2 src="/screenshot_scenarii.png" alt="User Case" height="200px" />
+        </v-row>
       </card-resume>
     </v-col>
   </diapo-item>

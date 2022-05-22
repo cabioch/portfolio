@@ -9,9 +9,8 @@
         <diapo-2 />
         <diapo-3 />
         <diapo-4 />
+        <diapo-6 />
         <diapo-5 />
-        <!-- TODO A refaire -->
-        <!-- <diapo-6 /> -->
       </v-carousel>
     </div>
   </div>
@@ -23,8 +22,6 @@ export default {
   async asyncData({ $content }) {
     return {
       page: await $content('presentation').fetch(),
-      aps3: await $content('projets/APS3').fetch(),
-      stage1: await $content('projets/Stage1').fetch(),
     }
   },
 
@@ -52,6 +49,7 @@ export default {
   height: 100vh;
   width: 100vw;
 }
+
 #content {
   height: 100vh;
   width: 99vw;

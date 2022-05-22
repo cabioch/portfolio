@@ -4,26 +4,19 @@
     <v-col cols="6">
       <card-resume>
         <p>
-          Création de mon portfolio avec NuxtJS (SSR), VueJS et Vuetify. CI Avec
-          GitHub. Utilisation de notion pour le suivi du projet. Présenter Nuxt
-          ??
-          <br />
-          AJOUTER LOGOS + Screenshot Notion ?? / Docs de nuxt, ou qqchose ??
+          Création de mon portfolio avec VueJS et Vuetify. Intégration continue avec
+          GitHub Actions.
         </p>
       </card-resume>
     </v-col>
     <v-col cols="6">
-      <card-technologies
-        :height="100"
-        :logos="[
-          'nuxt.png',
-          'vue.png',
-          'vuetify.png',
-          'html5.png',
-          'css.png',
-          'js.png',
-        ]"
-      />
+      <card-technologies :height="100" :logos="[
+        'vue.png',
+        'vuetify.png',
+        'html5.png',
+        'css.png',
+        'js.png',
+      ]" />
     </v-col>
   </diapo-item>
 </template>
